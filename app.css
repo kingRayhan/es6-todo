@@ -1,0 +1,107 @@
+body{
+	background: #f3f3f3;
+	color: #333;
+}
+
+.app-header{
+	font-family: 'Bowlby One SC';
+	text-align: center;
+	padding: 20px 0;
+	background-color: #565656;
+	color: transparent;
+	text-shadow: 2px 2px 3px rgba(255,255,255,0.7);
+	-webkit-background-clip: text;
+	 -moz-background-clip: text;
+	      background-clip: text;
+}
+#inputform {
+    padding: 15px;
+    background: #fff;
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+    border-top: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px 3px 0 0;
+}
+.app-header h2{
+	font-size: 45px;
+	letter-spacing: 10px;
+}
+
+.newtodo{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+}
+.newtodo:focus{
+    outline: none;
+}
+.newtodo::placeholder{
+	color: #ccc;
+}
+
+
+/* Clear Done Button */
+.clear-done{
+	background: none;
+	border: none;
+	color: #7e7e7e;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 16px 0;
+	display: inline-block;
+}
+.clear-done:focus{
+    outline: none;
+}
+
+.clear-done:focus,
+.clear-done:hover{
+	cursor: pointer;
+}
+
+
+.todo-app--actions{
+	float: right;
+}
+.todo-app--actions button{
+	border: 0;
+	cursor: pointer;
+}
+.todo-app--actions button:focus{
+	outline: none;
+}
+.todo-app--actions .delete{
+	color: red;
+}
+.todo-app--actions .make-done{
+	color: green;
+}
+.todo-app--actions .make-undone{
+	color: #ffbb00;
+}
+
+/* Tasks */
+
+.task--done{
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+.todo-edit-input {
+    width: 100%;
+    padding: 10px;
+}
+.todo-edit-input:focus{
+	outline: 0;
+}
+.list-form{
+	display: none;
+}
+.editing .list-content{
+	display: none;
+}
+.editing .list-form{
+	display: block;
+}
+
