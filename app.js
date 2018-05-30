@@ -82,13 +82,7 @@ clearDone.addEventListener('click' , clearDoneTodos);
 function createList()
 {
 	todolist.innerHTML = todos.map( (todo , i) => `
-		<li class="list-group-item" 
-			ondblclick="this.classList.add('editing')"
-			onkeydown="event.preventDefault(); if(event.keyCode == 13) this.classList.remove('editing');"
-		>
-			<form class="list-form">
-				<input type="text" class="todo-edit-input" value="${todo.task}"/>
-			</form>             
+		<li class="list-group-item">
 			<div class="list-content">
 				<span class="task ${ (todo.done) ? 'task--done' : '' }">${todo.task}</span>
 				<div class="todo-app--actions">
